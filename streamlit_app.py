@@ -16,7 +16,7 @@ archivo_subido = st.file_uploader(
 )
 
 if archivo_subido is not None:
-  df = pd.read_csv(archivo_subido)
+  df = pd.read_csv(archivo_subido, encoding="latin1")
 
   # Filtros laterales
   st.sidebar.header("Filtros de Análisis")
